@@ -13,3 +13,4 @@ IP address 153.138.24.18 is from Chiyoda, Japan
 The project requires ```json``` and ```requests``` modules to run. The API offers several information beyond country and city (like region, zip, latutude and longitude and so on): you can explore different options to be implemented in your projects. Note that also a "status" flag is returned to indicate the success of the request (the endpoint is limited to 45 requests per minute from an IP address).
 
 prima prova
+terza prova
