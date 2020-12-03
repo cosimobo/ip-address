@@ -4,7 +4,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-csv_file= ("location_of_ip_address.csv")
+csv_file = "location_of_ip_address.csv"
 df = pd.read_csv(csv_file)
 
 df.head()
