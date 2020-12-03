@@ -1,12 +1,19 @@
 # https://towardsdatascience.com/easy-steps-to-plot-geographic-data-on-a-map-python-11217859a2db
 
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
-df = pd.read_csv("location_of_ip_address.csv")
+csv_file= ("location_of_ip_address.csv")
+df = pd.read_csv(csv_file)
 
 df.head()
+
+BBox = ((df.longitude.min(),   df.longitude.max(),
+         df.latitude.min(), df.latitude.max()))
+
+print(BBox)
+# (-122.9638, 151.1021, -37.6363, 55.7028)
+
 
 
 
