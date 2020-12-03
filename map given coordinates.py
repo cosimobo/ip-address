@@ -21,3 +21,4 @@ ax.set_title('Plotting Spatial Data on Riyadh Map')
 ax.set_xlim(BBox[0], BBox[1])
 ax.set_ylim(BBox[2], BBox[3])
 ax.imshow(ruh_m, zorder=0, extent=BBox, aspect='equal')
+
