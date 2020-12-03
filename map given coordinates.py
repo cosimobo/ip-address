@@ -1,10 +1,58 @@
 # https://towardsdatascience.com/easy-steps-to-plot-geographic-data-on-a-map-python-11217859a2db
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
+df = pd.read_csv("location_of_ip_address.csv")
+
+df.head()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 import requests
+import csv
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
+
+
+CSV_URL = "https://freegeoip.app/json"
+
+
+with requests.Session() as s:
+    download = s.get(CSV_URL)
+
+    decoded_content = download.content.decode('utf-8')
+
+    df = csv.reader(decoded_content.splitlines(), delimiter=',')
+    my_list = list(df)
+    for row in my_list:
+        print(row)
+
+
+
+
+
+
 
 url = "https://freegeoip.app/json"
 response = requests.get(url)
@@ -18,8 +66,13 @@ else:
 
 #now we can see the latitude and longitude
 
+print(response.content)
 
-"""
+df = csv.reader(response, dialect=csv)
+for row in df:
+    print(row)
+
+
 
 df = pd.read_csv("https://freegeoip.app/json")
 
