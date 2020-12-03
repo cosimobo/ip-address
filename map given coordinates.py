@@ -24,6 +24,7 @@ m = folium.Map(location=[20,0], tiles="Mapbox Bright", zoom_start=1)
 folium.Marker(lon,lat,city).add_to(m)
 m.save("map.html")
 
+-------------------
 
 import pandas as pd
 import matplotlib.pyplot as plt
